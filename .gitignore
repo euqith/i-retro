@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Xcode user & workspace state (keep xcshareddata/xcschemes tracked)
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+
+# Build artifacts & DerivedData
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcresult
+ModuleCache.noindex/

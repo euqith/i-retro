@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD0000010000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000030000000000000003 /* AppDelegate.swift */; };
+		DD0000020000000000000002 /* PhotoPermissionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000040000000000000004 /* PhotoPermissionsHelper.swift */; };
+		DD0000030000000000000003 /* CubeLUTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000060000000000000006 /* CubeLUTParser.swift */; };
+		DD0000040000000000000004 /* PresetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000070000000000000007 /* PresetManager.swift */; };
+		DD0000050000000000000005 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000080000000000000008 /* CameraViewController.swift */; };
+		DD0000060000000000000006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0000090000000000000009 /* Assets.xcassets */; };
+		DD0000070000000000000007 /* FoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000100000000000000010 /* FoundationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		110000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0000010000000000000001;
+			remoteInfo = iRetro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC0000010000000000000001 /* iRetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000020000000000000002 /* iRetroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRetroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000030000000000000003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC0000040000000000000004 /* PhotoPermissionsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPermissionsHelper.swift; sourceTree = "<group>"; };
+		CC0000050000000000000005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0000060000000000000006 /* CubeLUTParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeLUTParser.swift; sourceTree = "<group>"; };
+		CC0000070000000000000007 /* PresetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetManager.swift; sourceTree = "<group>"; };
+		CC0000080000000000000008 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CC0000090000000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC0000100000000000000010 /* FoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF0000020000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0000050000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				BB0000030000000000000003 /* iRetro */,
+				BB0000100000000000000010 /* iRetroTests */,
+				BB0000020000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB0000020000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000010000000000000001 /* iRetro.app */,
+				CC0000020000000000000002 /* iRetroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB0000030000000000000003 /* iRetro */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000040000000000000004 /* App */,
+				BB0000050000000000000005 /* Core */,
+				BB0000080000000000000008 /* Camera */,
+				BB0000090000000000000009 /* Resources */,
+			);
+			path = iRetro;
+			sourceTree = "<group>";
+		};
+		BB0000040000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000030000000000000003 /* AppDelegate.swift */,
+				CC0000040000000000000004 /* PhotoPermissionsHelper.swift */,
+				CC0000050000000000000005 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BB0000050000000000000005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000060000000000000006 /* LUT */,
+				BB0000070000000000000007 /* Presets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BB0000060000000000000006 /* LUT */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000060000000000000006 /* CubeLUTParser.swift */,
+			);
+			path = LUT;
+			sourceTree = "<group>";
+		};
+		BB0000070000000000000007 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000070000000000000007 /* PresetManager.swift */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		BB0000080000000000000008 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000080000000000000008 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		BB0000090000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000090000000000000009 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB0000100000000000000010 /* iRetroTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000100000000000000010 /* FoundationTests.swift */,
+			);
+			path = iRetroTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0000010000000000000001 /* iRetro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220000040000000000000004 /* Build configuration list for PBXNativeTarget "iRetro" */;
+			buildPhases = (
+				FF0000010000000000000001 /* Sources */,
+				FF0000020000000000000002 /* Frameworks */,
+				FF0000030000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iRetro;
+			productName = iRetro;
+			productReference = CC0000010000000000000001 /* iRetro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE0000020000000000000002 /* iRetroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220000070000000000000007 /* Build configuration list for PBXNativeTarget "iRetroTests" */;
+			buildPhases = (
+				FF0000040000000000000004 /* Sources */,
+				FF0000050000000000000005 /* Frameworks */,
+				FF0000060000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				110000020000000000000002 /* PBXTargetDependency */,
+			);
+			name = iRetroTests;
+			productName = iRetroTests;
+			productReference = CC0000020000000000000002 /* iRetroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EE0000010000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EE0000020000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = EE0000010000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 220000010000000000000001 /* Build configuration list for PBXProject "iRetro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB0000010000000000000001;
+			productRefGroup = BB0000020000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0000010000000000000001 /* iRetro */,
+				EE0000020000000000000002 /* iRetroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF0000030000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0000060000000000000006 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0000060000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF0000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0000010000000000000001 /* AppDelegate.swift in Sources */,
+				DD0000020000000000000002 /* PhotoPermissionsHelper.swift in Sources */,
+				DD0000030000000000000003 /* CubeLUTParser.swift in Sources */,
+				DD0000040000000000000004 /* PresetManager.swift in Sources */,
+				DD0000050000000000000005 /* CameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0000040000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0000070000000000000007 /* FoundationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		110000020000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0000010000000000000001 /* iRetro */;
+			targetProxy = 110000010000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		220000020000000000000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				__DIAGNOSE_INVALID_DEPLOYMENT_TARGET_AS_ERROR = NO;
+			};
+			name = Debug;
+		};
+		220000030000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_DEBUG_DYLIB = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				__DIAGNOSE_INVALID_DEPLOYMENT_TARGET_AS_ERROR = NO;
+			};
+			name = Release;
+		};
+		220000050000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = iRetro/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iretro.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				__DIAGNOSE_INVALID_DEPLOYMENT_TARGET_AS_ERROR = NO;
+			};
+			name = Debug;
+		};
+		220000060000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_DEBUG_DYLIB = NO;
+				INFOPLIST_FILE = iRetro/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iretro.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				__DIAGNOSE_INVALID_DEPLOYMENT_TARGET_AS_ERROR = NO;
+			};
+			name = Release;
+		};
+		220000080000000000000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_DEBUG_DYLIB = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iretro.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRetro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iRetro";
+				__DIAGNOSE_INVALID_DEPLOYMENT_TARGET_AS_ERROR = NO;
+			};
+			name = Debug;
+		};
+		220000090000000000000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_DEBUG_DYLIB = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iretro.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRetro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iRetro";
+				__DIAGNOSE_INVALID_DEPLOYMENT_TARGET_AS_ERROR = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220000010000000000000001 /* Build configuration list for PBXProject "iRetro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220000020000000000000002 /* Debug */,
+				220000030000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220000040000000000000004 /* Build configuration list for PBXNativeTarget "iRetro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220000050000000000000005 /* Debug */,
+				220000060000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220000070000000000000007 /* Build configuration list for PBXNativeTarget "iRetroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220000080000000000000008 /* Debug */,
+				220000090000000000000009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000010000000000000001 /* Project object */;
+}
